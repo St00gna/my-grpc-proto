@@ -16,4 +16,5 @@ service HelloService { // add service
     rpc SayHello(HelloRequest) returns (HelloResponse) {}
     rpc SayManyHellos(HelloRequest) returns (stream HelloResponse) {}
     rpc SayHelloToEveryone(stream HelloRequest) returns (HelloResponse) {}
+    rpc SayHelloContionus(stream HelloRequest) returns (stream HelloResponse) {}
 }
